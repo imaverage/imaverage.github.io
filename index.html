@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html>
 <body>
-    <a href="editorial://?command=LoadActiveProcess">method2</a>
+    method 3
+    <a href="editorial://?command=LoadActiveProcess">method3</a>
     <button onclick="ok()">redirect</button>
     <script>
       const link = "editorial://?command=LoadActiveProcess";
       
-      window.open(link);
+      ok();
       function ok() {
-          alert('doing it');
           window.location.href=link;
       }
     </script>
