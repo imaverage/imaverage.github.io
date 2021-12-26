@@ -1,9 +1,16 @@
 <!DOCTYPE html>
 <html>
 <body>
-    method1
+    <a href="editorial://?command=LoadActiveProcess">method2</a>
+    <button onclick="ok()">redirect</button>
     <script>
-      window.open("editorial://?command=LoadActiveProcess");
+      const link = "editorial://?command=LoadActiveProcess";
+      
+      window.open(link);
+      function ok() {
+          alert('doing it');
+          window.location.href=link;
+      }
     </script>
     
 </body>
